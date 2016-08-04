@@ -11,12 +11,18 @@ import UIKit
 class DisplayBillRateViewController: UIViewController {
     
     @IBOutlet weak var billRateTextField: UITextField!
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        billRateTextField.text = ""
+    }
 
         
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let identifier = segue.identifier {
-            if identifier == "Save" {
-                print("Save button tapped")
+            if identifier == "saveToSubscription" {
+                print("Save to subscription button tapped")
             }
         }
     }

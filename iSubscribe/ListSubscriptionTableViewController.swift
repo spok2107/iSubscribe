@@ -59,7 +59,7 @@ class ListSubscriptionTableViewController: UITableViewController {
                 
                 let subscription = subsciptions[indexPath.row]
                 
-                let displaySubscriptionViewController = segue.destinationViewController as! DisplaySubsciptionTableViewController
+                let displaySubscriptionViewController = segue.destinationViewController as! DisplaySubscriptionTableViewController
                 
                 displaySubscriptionViewController.subscription = subscription
                 

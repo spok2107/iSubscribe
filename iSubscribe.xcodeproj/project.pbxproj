@@ -14,7 +14,7 @@
 		596006351D52CB7A00CA863A /* DisplayBillRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596006341D52CB7A00CA863A /* DisplayBillRateViewController.swift */; };
 		59935C771D4C05660055B0C5 /* ListSubscriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59935C761D4C05660055B0C5 /* ListSubscriptionTableViewCell.swift */; };
 		59935C7B1D4C14950055B0C5 /* ListSubscriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59935C7A1D4C14950055B0C5 /* ListSubscriptionTableViewController.swift */; };
-		59935C7D1D4FC99F0055B0C5 /* DisplaySubsciptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59935C7C1D4FC99F0055B0C5 /* DisplaySubsciptionTableViewController.swift */; };
+		59935C7D1D4FC99F0055B0C5 /* DisplaySubscriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59935C7C1D4FC99F0055B0C5 /* DisplaySubscriptionTableViewController.swift */; };
 		59935C801D4FE5F00055B0C5 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59935C7F1D4FE5F00055B0C5 /* Subscription.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,7 @@
 		596006341D52CB7A00CA863A /* DisplayBillRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayBillRateViewController.swift; sourceTree = "<group>"; };
 		59935C761D4C05660055B0C5 /* ListSubscriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSubscriptionTableViewCell.swift; sourceTree = "<group>"; };
 		59935C7A1D4C14950055B0C5 /* ListSubscriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSubscriptionTableViewController.swift; sourceTree = "<group>"; };
-		59935C7C1D4FC99F0055B0C5 /* DisplaySubsciptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplaySubsciptionTableViewController.swift; sourceTree = "<group>"; };
+		59935C7C1D4FC99F0055B0C5 /* DisplaySubscriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplaySubscriptionTableViewController.swift; sourceTree = "<group>"; };
 		59935C7F1D4FE5F00055B0C5 /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				59935C7A1D4C14950055B0C5 /* ListSubscriptionTableViewController.swift */,
-				59935C7C1D4FC99F0055B0C5 /* DisplaySubsciptionTableViewController.swift */,
+				59935C7C1D4FC99F0055B0C5 /* DisplaySubscriptionTableViewController.swift */,
 				596006341D52CB7A00CA863A /* DisplayBillRateViewController.swift */,
 			);
 			name = Controllers;
@@ -174,7 +174,7 @@
 				59935C7B1D4C14950055B0C5 /* ListSubscriptionTableViewController.swift in Sources */,
 				596006351D52CB7A00CA863A /* DisplayBillRateViewController.swift in Sources */,
 				59935C771D4C05660055B0C5 /* ListSubscriptionTableViewCell.swift in Sources */,
-				59935C7D1D4FC99F0055B0C5 /* DisplaySubsciptionTableViewController.swift in Sources */,
+				59935C7D1D4FC99F0055B0C5 /* DisplaySubscriptionTableViewController.swift in Sources */,
 				59276D1D1D4977F000657389 /* AppDelegate.swift in Sources */,
 				59935C801D4FE5F00055B0C5 /* Subscription.swift in Sources */,
 			);

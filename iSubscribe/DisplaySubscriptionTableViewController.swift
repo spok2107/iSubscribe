@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DisplaySubsciptionTableViewController: UITableViewController {
+class DisplaySubscriptionTableViewController: UITableViewController {
     
     var subscription: Subscription?
     

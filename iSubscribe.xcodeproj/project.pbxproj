@@ -12,6 +12,7 @@
 		59276D241D4977F000657389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59276D231D4977F000657389 /* Assets.xcassets */; };
 		59276D271D4977F000657389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59276D251D4977F000657389 /* LaunchScreen.storyboard */; };
 		596006351D52CB7A00CA863A /* DisplayBillRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596006341D52CB7A00CA863A /* DisplayBillRateViewController.swift */; };
+		596E52D01D53D4BA00BF06E2 /* BillRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596E52CF1D53D4BA00BF06E2 /* BillRate.swift */; };
 		59935C771D4C05660055B0C5 /* ListSubscriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59935C761D4C05660055B0C5 /* ListSubscriptionTableViewCell.swift */; };
 		59935C7B1D4C14950055B0C5 /* ListSubscriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59935C7A1D4C14950055B0C5 /* ListSubscriptionTableViewController.swift */; };
 		59935C7D1D4FC99F0055B0C5 /* DisplaySubscriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59935C7C1D4FC99F0055B0C5 /* DisplaySubscriptionTableViewController.swift */; };
@@ -26,6 +27,7 @@
 		59276D261D4977F000657389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59276D281D4977F000657389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		596006341D52CB7A00CA863A /* DisplayBillRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayBillRateViewController.swift; sourceTree = "<group>"; };
+		596E52CF1D53D4BA00BF06E2 /* BillRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillRate.swift; sourceTree = "<group>"; };
 		59935C761D4C05660055B0C5 /* ListSubscriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSubscriptionTableViewCell.swift; sourceTree = "<group>"; };
 		59935C7A1D4C14950055B0C5 /* ListSubscriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSubscriptionTableViewController.swift; sourceTree = "<group>"; };
 		59935C7C1D4FC99F0055B0C5 /* DisplaySubscriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplaySubscriptionTableViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				59935C7F1D4FE5F00055B0C5 /* Subscription.swift */,
+				596E52CF1D53D4BA00BF06E2 /* BillRate.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				59935C7B1D4C14950055B0C5 /* ListSubscriptionTableViewController.swift in Sources */,
 				596006351D52CB7A00CA863A /* DisplayBillRateViewController.swift in Sources */,
 				59935C771D4C05660055B0C5 /* ListSubscriptionTableViewCell.swift in Sources */,
+				596E52D01D53D4BA00BF06E2 /* BillRate.swift in Sources */,
 				59935C7D1D4FC99F0055B0C5 /* DisplaySubscriptionTableViewController.swift in Sources */,
 				59276D1D1D4977F000657389 /* AppDelegate.swift in Sources */,
 				59935C801D4FE5F00055B0C5 /* Subscription.swift in Sources */,

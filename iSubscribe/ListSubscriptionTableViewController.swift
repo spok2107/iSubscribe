@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import RealmSwift
+
 
 class ListSubscriptionTableViewController: UITableViewController {
     
-    var subsciptions = [Subscription]() {
+    var subsciptions: Results<Subscription>! {
         didSet {
             tableView.reloadData()
         }
@@ -29,8 +31,6 @@ class ListSubscriptionTableViewController: UITableViewController {
         
         cell.subscriptionNameLabel.text = subscription.subscriptionName
         
-        cell.amountToBePaidLabel.text = subscription.billRate
-        
         return cell
     }
     
@@ -38,14 +38,15 @@ class ListSubscriptionTableViewController: UITableViewController {
 
         if editingStyle == .Delete {
 
-            subsciptions.removeAtIndex(indexPath.row)
-    
-            tableView.reloadData()
+            RealmHelper.deleteSubscription(subsciptions[indexPath.row])
+            
+            subsciptions = RealmHelper.retriveSubscription()
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        subsciptions = RealmHelper.retriveSubscription()
     }
     
     

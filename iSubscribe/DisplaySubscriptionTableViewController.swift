@@ -7,15 +7,26 @@
 //
 
 import UIKit
+import RealmSwift
 
 class DisplaySubscriptionTableViewController: UITableViewController {
     
     var subscription: Subscription?
     
     @IBOutlet weak var subscriptionNameTextField: UITextField!
-
-    @IBOutlet weak var subscriptionBillRateTextLabel: UILabel!
     
+    @IBOutlet weak var usernameTextField: UITextField!
+   
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var billCycleTextField: UITextField!
+   
+    @IBOutlet weak var billRateTextField: UITextField!
+    
+    @IBOutlet weak var reminderTextField: UITextField!
+
+    @IBOutlet weak var firstBillDateDatePicker: UIDatePicker!
+
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -23,17 +34,32 @@ class DisplaySubscriptionTableViewController: UITableViewController {
         if let subscription = subscription {
         
             subscriptionNameTextField.text = subscription.subscriptionName
-            subscriptionBillRateTextLabel.text = subscription.billRate
+            usernameTextField.text = subscription.username
+            passwordTextField.text = subscription.password
+            billCycleTextField.text = subscription.billCycle
+            billRateTextField.text = subscription.billRate
+            reminderTextField.text = subscription.reminder
+            firstBillDateDatePicker.date = subscription.firstBillDate
+            
         } else {
             
             subscriptionNameTextField.text = ""
-            subscriptionBillRateTextLabel.text = ""
+            usernameTextField.text = ""
+            passwordTextField.text = ""
+            billCycleTextField.text = ""
+            billRateTextField.text = ""
+            reminderTextField.text = ""
+            firstBillDateDatePicker.date = NSDate()
+            print("Test \(firstBillDateDatePicker.date)")
+
         }
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -42,29 +68,40 @@ class DisplaySubscriptionTableViewController: UITableViewController {
 
             if let subscription = subscription {
                 
-                subscription.subscriptionName = subscriptionNameTextField.text ?? ""
-                subscription.billRate = subscriptionBillRateTextLabel.text ?? ""
-                
-                listSubscriptionTableViewController.tableView.reloadData()
+                 let newSubscription = Subscription()
+                newSubscription.subscriptionName = subscriptionNameTextField.text ?? ""
+                newSubscription.username = usernameTextField.text ?? ""
+                newSubscription.password = passwordTextField.text ?? ""
+                newSubscription.billCycle = billCycleTextField.text ?? ""
+                newSubscription.billRate = billRateTextField.text ?? ""
+                newSubscription.reminder = reminderTextField.text ?? ""
+                RealmHelper.updateSubscription(subscription, newSubscription: newSubscription)
 
             } else {
                 
-                let newSubscription = Subscription()
-                newSubscription.subscriptionName = subscriptionNameTextField.text ?? ""
-                newSubscription.billRate = subscriptionBillRateTextLabel.text ?? ""
-                listSubscriptionTableViewController.subsciptions.append(newSubscription)
-            
+                let subscription = Subscription()
+                subscription.subscriptionName = subscriptionNameTextField.text ?? ""
+                subscription.username = usernameTextField.text ?? ""
+                subscription.password = passwordTextField.text ?? ""
+                subscription.billCycle = billCycleTextField.text ?? ""
+                subscription.billRate = billRateTextField.text ?? ""
+                subscription.reminder = reminderTextField.text ?? ""
+                RealmHelper.addSubscription(subscription)
             }
-        }
-        
-        if let identifier = segue.identifier {
             
-            if identifier == "displayBillRate" {
-                
-                print("Transitioning to the Display Subscription Table View Controller")
-            }
+                listSubscriptionTableViewController.subsciptions = RealmHelper.retriveSubscription()
+            
+            
         }
     }
+    
+//        if let identifier = segue.identifier {
+//            
+//            if identifier == "displayBillRate" {
+//                
+//                print("Transitioning to the Display Subscription Table View Controller")
+//            }
+//        }
     
 
     @IBAction func unwindToDisplayBillRateViewController(segue: UIStoryboardSegue) {

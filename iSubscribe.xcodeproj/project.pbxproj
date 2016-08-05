@@ -7,27 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		590596F11D552174000B5E5E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590596EF1D552174000B5E5E /* Realm.framework */; };
+		590596F21D552174000B5E5E /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 590596EF1D552174000B5E5E /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		590596F31D552174000B5E5E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590596F01D552174000B5E5E /* RealmSwift.framework */; };
+		590596F41D552174000B5E5E /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 590596F01D552174000B5E5E /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		59276D1D1D4977F000657389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59276D1C1D4977F000657389 /* AppDelegate.swift */; };
 		59276D221D4977F000657389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59276D201D4977F000657389 /* Main.storyboard */; };
 		59276D241D4977F000657389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59276D231D4977F000657389 /* Assets.xcassets */; };
 		59276D271D4977F000657389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59276D251D4977F000657389 /* LaunchScreen.storyboard */; };
-		596006351D52CB7A00CA863A /* DisplayBillRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596006341D52CB7A00CA863A /* DisplayBillRateViewController.swift */; };
-		596E52D01D53D4BA00BF06E2 /* BillRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596E52CF1D53D4BA00BF06E2 /* BillRate.swift */; };
+		596E52D31D54026500BF06E2 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596E52D21D54026500BF06E2 /* RealmHelper.swift */; };
 		59935C771D4C05660055B0C5 /* ListSubscriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59935C761D4C05660055B0C5 /* ListSubscriptionTableViewCell.swift */; };
 		59935C7B1D4C14950055B0C5 /* ListSubscriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59935C7A1D4C14950055B0C5 /* ListSubscriptionTableViewController.swift */; };
 		59935C7D1D4FC99F0055B0C5 /* DisplaySubscriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59935C7C1D4FC99F0055B0C5 /* DisplaySubscriptionTableViewController.swift */; };
 		59935C801D4FE5F00055B0C5 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59935C7F1D4FE5F00055B0C5 /* Subscription.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		590596F51D552174000B5E5E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				590596F41D552174000B5E5E /* RealmSwift.framework in Embed Frameworks */,
+				590596F21D552174000B5E5E /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		590596EF1D552174000B5E5E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		590596F01D552174000B5E5E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		59276D191D4977EF00657389 /* iSubscribe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSubscribe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59276D1C1D4977F000657389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59276D211D4977F000657389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59276D231D4977F000657389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59276D261D4977F000657389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59276D281D4977F000657389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		596006341D52CB7A00CA863A /* DisplayBillRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayBillRateViewController.swift; sourceTree = "<group>"; };
-		596E52CF1D53D4BA00BF06E2 /* BillRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillRate.swift; sourceTree = "<group>"; };
+		596E52D21D54026500BF06E2 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		59935C761D4C05660055B0C5 /* ListSubscriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSubscriptionTableViewCell.swift; sourceTree = "<group>"; };
 		59935C7A1D4C14950055B0C5 /* ListSubscriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSubscriptionTableViewController.swift; sourceTree = "<group>"; };
 		59935C7C1D4FC99F0055B0C5 /* DisplaySubscriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplaySubscriptionTableViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				590596F31D552174000B5E5E /* RealmSwift.framework in Frameworks */,
+				590596F11D552174000B5E5E /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +69,8 @@
 		59276D101D4977EF00657389 = {
 			isa = PBXGroup;
 			children = (
+				590596EF1D552174000B5E5E /* Realm.framework */,
+				590596F01D552174000B5E5E /* RealmSwift.framework */,
 				59276D1B1D4977F000657389 /* iSubscribe */,
 				59276D1A1D4977EF00657389 /* Products */,
 			);
@@ -64,6 +87,7 @@
 		59276D1B1D4977F000657389 /* iSubscribe */ = {
 			isa = PBXGroup;
 			children = (
+				596E52D11D54023400BF06E2 /* Helpers */,
 				59935C7E1D4FE5A80055B0C5 /* Models */,
 				59935C701D4AD07E0055B0C5 /* Controllers */,
 				59935C731D4C04EB0055B0C5 /* Views */,
@@ -76,12 +100,19 @@
 			path = iSubscribe;
 			sourceTree = "<group>";
 		};
+		596E52D11D54023400BF06E2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				596E52D21D54026500BF06E2 /* RealmHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		59935C701D4AD07E0055B0C5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				59935C7A1D4C14950055B0C5 /* ListSubscriptionTableViewController.swift */,
 				59935C7C1D4FC99F0055B0C5 /* DisplaySubscriptionTableViewController.swift */,
-				596006341D52CB7A00CA863A /* DisplayBillRateViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -98,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				59935C7F1D4FE5F00055B0C5 /* Subscription.swift */,
-				596E52CF1D53D4BA00BF06E2 /* BillRate.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -113,6 +143,7 @@
 				59276D151D4977EF00657389 /* Sources */,
 				59276D161D4977EF00657389 /* Frameworks */,
 				59276D171D4977EF00657389 /* Resources */,
+				590596F51D552174000B5E5E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,10 +206,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				59935C7B1D4C14950055B0C5 /* ListSubscriptionTableViewController.swift in Sources */,
-				596006351D52CB7A00CA863A /* DisplayBillRateViewController.swift in Sources */,
 				59935C771D4C05660055B0C5 /* ListSubscriptionTableViewCell.swift in Sources */,
-				596E52D01D53D4BA00BF06E2 /* BillRate.swift in Sources */,
 				59935C7D1D4FC99F0055B0C5 /* DisplaySubscriptionTableViewController.swift in Sources */,
+				596E52D31D54026500BF06E2 /* RealmHelper.swift in Sources */,
 				59276D1D1D4977F000657389 /* AppDelegate.swift in Sources */,
 				59935C801D4FE5F00055B0C5 /* Subscription.swift in Sources */,
 			);
@@ -295,6 +325,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iSubscribe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.iSubscribe;
@@ -306,6 +340,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iSubscribe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.iSubscribe;

@@ -7,12 +7,16 @@
 //
 
 import Foundation
+import RealmSwift
 
-class Subscription {
-    var subscriptionName = ""
-    var billCycle = ""
-    var billRate = ""
-    var reminder = ""
-    var firstBillDate = ""
+class Subscription: Object {
+    
+    dynamic var username: String = ""
+    dynamic var password: String = ""
+    dynamic var subscriptionName: String = ""
+    dynamic var billCycle: String = ""
+    dynamic var billRate: String = ""
+    dynamic var reminder: String = ""
+    dynamic var firstBillDate = NSDate()
     
 }

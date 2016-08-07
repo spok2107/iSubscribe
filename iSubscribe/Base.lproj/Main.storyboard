@@ -8,14 +8,18 @@
     <customFonts key="customFonts">
         <mutableArray key="Exo2-BlackItalic.otf">
             <string>Exo2-BlackItalic</string>
+            <string>Exo2-BlackItalic</string>
+            <string>Exo2-BlackItalic</string>
+            <string>Exo2-BlackItalic</string>
+            <string>Exo2-BlackItalic</string>
+            <string>Exo2-BlackItalic</string>
         </mutableArray>
         <mutableArray key="Exo2-Bold.otf">
             <string>Exo2-Bold</string>
-        </mutableArray>
-        <mutableArray key="Exo2-Regular.otf">
-            <string>Exo2-Regular</string>
-            <string>Exo2-Regular</string>
-            <string>Exo2-Regular</string>
+            <string>Exo2-Bold</string>
+            <string>Exo2-Bold</string>
+            <string>Exo2-Bold</string>
+            <string>Exo2-Bold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -47,7 +51,7 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Subscription" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0PV-aj-5TN">
                                                     <rect key="frame" x="8" y="8" width="398" height="30"/>
                                                     <color key="textColor" red="1" green="0.37647058820000001" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
                                                 </textField>
                                             </subviews>
@@ -67,33 +71,33 @@
                                         <rect key="frame" x="0.0" y="164" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Zf-W0-kv0" id="HLX-S6-MQU">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MZC-o4-ald">
-                                                    <rect key="frame" x="220" y="7" width="180" height="30"/>
-                                                    <color key="backgroundColor" red="0.71764705882352942" green="0.82745098039215681" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="180" id="WPa-W8-xSw"/>
-                                                    </constraints>
-                                                    <color key="textColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
-                                                </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlM-k1-xfb">
                                                     <rect key="frame" x="19" y="11" width="92" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="92" id="CKV-wh-82c"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Exo2-BlackItalic" family="Exo 2" pointSize="17"/>
-                                                    <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="1" green="0.37647058820000001" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MZC-o4-ald">
+                                                    <rect key="frame" x="226" y="7" width="180" height="30"/>
+                                                    <color key="backgroundColor" red="0.71764705882352942" green="0.82745098039215681" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="180" id="iGd-0D-qi6"/>
+                                                    </constraints>
+                                                    <color key="textColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                                </textField>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="MZC-o4-ald" firstAttribute="centerY" secondItem="TlM-k1-xfb" secondAttribute="centerY" id="2wb-E3-Asw"/>
+                                                <constraint firstItem="MZC-o4-ald" firstAttribute="trailing" secondItem="HLX-S6-MQU" secondAttribute="trailingMargin" id="N2K-kT-3V4"/>
                                                 <constraint firstItem="TlM-k1-xfb" firstAttribute="centerY" secondItem="HLX-S6-MQU" secondAttribute="centerY" id="aoF-Cs-OqT"/>
-                                                <constraint firstItem="MZC-o4-ald" firstAttribute="centerY" secondItem="TlM-k1-xfb" secondAttribute="centerY" id="bXV-UV-Gb8"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="MZC-o4-ald" secondAttribute="trailing" constant="6" id="o4j-4i-N65"/>
                                                 <constraint firstItem="TlM-k1-xfb" firstAttribute="leading" secondItem="HLX-S6-MQU" secondAttribute="leadingMargin" constant="11" id="w7X-Zw-9YE"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -106,30 +110,31 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4j-qo-Nkp">
-                                                    <rect key="frame" x="19" y="12" width="121" height="21"/>
-                                                    <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="17"/>
-                                                    <color key="textColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4j-qo-Nkp">
+                                                    <rect key="frame" x="19" y="12" width="131" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Exo2-BlackItalic" family="Exo 2" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.37647058820000001" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hFF-LX-PwP">
-                                                    <rect key="frame" x="220" y="8" width="179" height="30"/>
+                                                    <rect key="frame" x="226" y="8" width="180" height="30"/>
                                                     <color key="backgroundColor" red="0.71764705882352942" green="0.82745098039215681" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="179" id="IhA-az-Kog"/>
+                                                        <constraint firstAttribute="width" constant="180" id="Tw6-Rw-uZc"/>
                                                     </constraints>
                                                     <color key="textColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="hFF-LX-PwP" firstAttribute="top" secondItem="Y7h-RF-SFC" secondAttribute="topMargin" id="6Zc-hy-4iO"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="hFF-LX-PwP" secondAttribute="trailing" constant="7" id="7ap-jq-wAy"/>
+                                                <constraint firstItem="hFF-LX-PwP" firstAttribute="top" secondItem="Y7h-RF-SFC" secondAttribute="topMargin" id="5DX-gD-cYI"/>
+                                                <constraint firstItem="hFF-LX-PwP" firstAttribute="trailing" secondItem="Y7h-RF-SFC" secondAttribute="trailingMargin" id="Cmq-uK-dTK"/>
                                                 <constraint firstItem="hFF-LX-PwP" firstAttribute="leading" secondItem="U4j-qo-Nkp" secondAttribute="trailing" constant="80" id="HjE-Gn-7nF"/>
                                                 <constraint firstItem="U4j-qo-Nkp" firstAttribute="leading" secondItem="Y7h-RF-SFC" secondAttribute="leadingMargin" constant="11" id="J2F-w4-hmD"/>
                                                 <constraint firstItem="hFF-LX-PwP" firstAttribute="leading" secondItem="U4j-qo-Nkp" secondAttribute="trailing" constant="80" id="JNf-xB-lWd"/>
-                                                <constraint firstItem="hFF-LX-PwP" firstAttribute="centerY" secondItem="U4j-qo-Nkp" secondAttribute="centerY" id="LTv-sa-ihe"/>
+                                                <constraint firstItem="hFF-LX-PwP" firstAttribute="leading" secondItem="U4j-qo-Nkp" secondAttribute="trailing" constant="76" id="Ou4-8D-ILu"/>
+                                                <constraint firstItem="hFF-LX-PwP" firstAttribute="centerY" secondItem="U4j-qo-Nkp" secondAttribute="centerY" id="kMY-6M-TeH"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
@@ -156,25 +161,26 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="92" id="xdO-Ug-fsc"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="17"/>
-                                                    <color key="textColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Exo2-BlackItalic" family="Exo 2" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.37647058820000001" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OYp-Cg-8Kf">
-                                                    <rect key="frame" x="299" y="7" width="97" height="30"/>
+                                                    <rect key="frame" x="316" y="7" width="90" height="30"/>
                                                     <color key="backgroundColor" red="0.71764705882352942" green="0.82745098039215681" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="97" id="csb-k6-FB0"/>
+                                                        <constraint firstAttribute="width" constant="90" id="iPy-yb-Vmw"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="14z-AO-cnS" firstAttribute="centerY" secondItem="s6B-d6-z0l" secondAttribute="centerY" id="2eR-36-lk4"/>
-                                                <constraint firstItem="14z-AO-cnS" firstAttribute="leading" secondItem="s6B-d6-z0l" secondAttribute="leadingMargin" constant="10" id="4LB-DF-MJS"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="OYp-Cg-8Kf" secondAttribute="trailing" constant="10" id="K2h-hc-yxO"/>
-                                                <constraint firstItem="14z-AO-cnS" firstAttribute="centerY" secondItem="OYp-Cg-8Kf" secondAttribute="centerY" id="RxB-Xo-Acz"/>
+                                                <constraint firstItem="14z-AO-cnS" firstAttribute="leading" secondItem="s6B-d6-z0l" secondAttribute="leadingMargin" constant="10" id="PaH-uC-haw"/>
+                                                <constraint firstItem="OYp-Cg-8Kf" firstAttribute="centerY" secondItem="s6B-d6-z0l" secondAttribute="centerY" id="ZRp-GE-8pt"/>
+                                                <constraint firstItem="OYp-Cg-8Kf" firstAttribute="centerY" secondItem="14z-AO-cnS" secondAttribute="centerY" id="kBC-gI-33F"/>
+                                                <constraint firstItem="OYp-Cg-8Kf" firstAttribute="trailing" secondItem="s6B-d6-z0l" secondAttribute="trailingMargin" id="qyo-WI-fy7"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.4392156862745098" green="0.74509803921568629" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
@@ -183,7 +189,7 @@
                                         <rect key="frame" x="0.0" y="324" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6ST-0b-PqI" id="opG-WO-9lv">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hz7-3e-Gc8">
@@ -191,24 +197,25 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="74" id="UMZ-ha-bO8"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Exo2-BlackItalic" family="Exo 2" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.37647058820000001" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1T1-6n-jtG">
-                                                    <rect key="frame" x="298" y="7" width="97" height="30"/>
+                                                    <rect key="frame" x="316" y="7" width="90" height="30"/>
                                                     <color key="backgroundColor" red="0.71764705882352942" green="0.82745098039215681" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="97" id="DhY-h1-SjA"/>
+                                                        <constraint firstAttribute="width" constant="90" id="hzs-yg-1te"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="1T1-6n-jtG" firstAttribute="trailing" secondItem="opG-WO-9lv" secondAttribute="trailingMargin" id="9rh-Y0-twJ"/>
                                                 <constraint firstItem="Hz7-3e-Gc8" firstAttribute="leading" secondItem="opG-WO-9lv" secondAttribute="leadingMargin" constant="10" id="C68-Fn-APw"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="1T1-6n-jtG" secondAttribute="trailing" constant="11" id="GNR-gA-eLY"/>
-                                                <constraint firstItem="Hz7-3e-Gc8" firstAttribute="centerY" secondItem="1T1-6n-jtG" secondAttribute="centerY" id="KsG-sj-Nvm"/>
+                                                <constraint firstItem="1T1-6n-jtG" firstAttribute="centerY" secondItem="Hz7-3e-Gc8" secondAttribute="centerY" id="H7A-AI-BUy"/>
                                                 <constraint firstItem="Hz7-3e-Gc8" firstAttribute="centerY" secondItem="opG-WO-9lv" secondAttribute="centerY" id="N6q-Ef-krN"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -218,7 +225,7 @@
                                         <rect key="frame" x="0.0" y="368" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gId-tR-m2M" id="e0g-85-ZzK">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFT-Cj-Ica">
@@ -226,25 +233,26 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="81" id="rwl-Kv-jk0"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Exo2-BlackItalic" family="Exo 2" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.37647058820000001" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="66q-Ub-HSb">
-                                                    <rect key="frame" x="298" y="7" width="97" height="30"/>
+                                                    <rect key="frame" x="316" y="7" width="90" height="30"/>
                                                     <color key="backgroundColor" red="0.71764705882352942" green="0.82745098039215681" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="97" id="WKL-4K-fap"/>
+                                                        <constraint firstAttribute="width" constant="90" id="DcZ-0r-vki"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="sFT-Cj-Ica" firstAttribute="leading" secondItem="e0g-85-ZzK" secondAttribute="leadingMargin" constant="10" id="0gl-EN-wB9"/>
                                                 <constraint firstItem="sFT-Cj-Ica" firstAttribute="centerY" secondItem="e0g-85-ZzK" secondAttribute="centerY" id="DQW-If-Rup"/>
-                                                <constraint firstItem="sFT-Cj-Ica" firstAttribute="centerY" secondItem="66q-Ub-HSb" secondAttribute="centerY" id="OFd-8m-Ife"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="66q-Ub-HSb" secondAttribute="trailing" constant="11" id="SkG-eA-hdt"/>
+                                                <constraint firstItem="66q-Ub-HSb" firstAttribute="trailing" secondItem="e0g-85-ZzK" secondAttribute="trailingMargin" id="cs7-ZM-vPV"/>
+                                                <constraint firstItem="66q-Ub-HSb" firstAttribute="centerY" secondItem="sFT-Cj-Ica" secondAttribute="centerY" id="vka-SC-AUe"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.4392156862745098" green="0.74509803921568629" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
@@ -253,22 +261,22 @@
                                         <rect key="frame" x="0.0" y="412" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tte-ZQ-lB7" id="Gsi-Uy-euc">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Bill Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYE-Lf-acV">
-                                                    <rect key="frame" x="17" y="11" width="107" height="21"/>
+                                                    <rect key="frame" x="17" y="11" width="150" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="107" id="vZM-AM-pyL"/>
+                                                        <constraint firstAttribute="width" constant="150" id="8Fx-SD-eP3"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Exo2-BlackItalic" family="Exo 2" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.37647058820000001" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="iYE-Lf-acV" firstAttribute="leading" secondItem="Gsi-Uy-euc" secondAttribute="leadingMargin" constant="9" id="qsU-3S-WG0"/>
-                                                <constraint firstItem="iYE-Lf-acV" firstAttribute="centerY" secondItem="Gsi-Uy-euc" secondAttribute="centerY" id="zEG-iT-zP8"/>
+                                                <constraint firstItem="iYE-Lf-acV" firstAttribute="leading" secondItem="Gsi-Uy-euc" secondAttribute="leadingMargin" constant="9" id="Li3-iY-2se"/>
+                                                <constraint firstItem="iYE-Lf-acV" firstAttribute="centerY" secondItem="Gsi-Uy-euc" secondAttribute="centerY" id="rD7-4T-rnL"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.4392156862745098" green="0.74509803921568629" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>

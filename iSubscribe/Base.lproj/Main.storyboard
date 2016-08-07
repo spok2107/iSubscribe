@@ -127,12 +127,14 @@
                                                 <constraint firstItem="hFF-LX-PwP" firstAttribute="top" secondItem="Y7h-RF-SFC" secondAttribute="topMargin" id="6Zc-hy-4iO"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="hFF-LX-PwP" secondAttribute="trailing" constant="7" id="7ap-jq-wAy"/>
                                                 <constraint firstItem="hFF-LX-PwP" firstAttribute="leading" secondItem="U4j-qo-Nkp" secondAttribute="trailing" constant="80" id="HjE-Gn-7nF"/>
+                                                <constraint firstItem="U4j-qo-Nkp" firstAttribute="leading" secondItem="Y7h-RF-SFC" secondAttribute="leadingMargin" constant="11" id="J2F-w4-hmD"/>
                                                 <constraint firstItem="hFF-LX-PwP" firstAttribute="leading" secondItem="U4j-qo-Nkp" secondAttribute="trailing" constant="80" id="JNf-xB-lWd"/>
                                                 <constraint firstItem="hFF-LX-PwP" firstAttribute="centerY" secondItem="U4j-qo-Nkp" secondAttribute="centerY" id="LTv-sa-ihe"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="HjE-Gn-7nF"/>
+                                                    <exclude reference="JNf-xB-lWd"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>

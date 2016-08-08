@@ -26,7 +26,26 @@ class DisplaySubscriptionTableViewController: UITableViewController {
     @IBOutlet weak var reminderTextField: UITextField!
 
     @IBOutlet weak var firstBillDateDatePicker: UIDatePicker!
+    
+//    @IBOutlet weak var tableView: UITableView!
+    
 
+    
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let returnedView = UIView(frame: CGRectMake(0, 92, 414, 44)) //set these values as necessary
+        returnedView.backgroundColor = UIColor(red: 112.0/255.0, green: 190.0/255.0, blue: 249.0/255.0, alpha: 1.0)
+//        let header: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
+//        
+//        header.textLabel?.textColor = UIColor.redColor()
+       
+        return returnedView
+    }
+    
+//    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+//        let header: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
+//        
+//        header.textLabel?.textColor = UIColor.redColor()
+//    }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)

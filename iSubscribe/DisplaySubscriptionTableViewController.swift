@@ -23,8 +23,8 @@ class DisplaySubscriptionTableViewController: UITableViewController {
    
     @IBOutlet weak var billRateTextField: UITextField!
     
-    @IBOutlet weak var reminderTextField: UITextField!
-
+    @IBOutlet weak var reminderSegmentedControl: UISegmentedControl!
+    
     @IBOutlet weak var firstBillDateDatePicker: UIDatePicker!
     
 //    @IBOutlet weak var tableView: UITableView!
@@ -34,9 +34,7 @@ class DisplaySubscriptionTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let returnedView = UIView(frame: CGRectMake(0, 92, 414, 44)) //set these values as necessary
         returnedView.backgroundColor = UIColor(red: 112.0/255.0, green: 190.0/255.0, blue: 249.0/255.0, alpha: 1.0)
-//        let header: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-//        
-//        header.textLabel?.textColor = UIColor.redColor()
+
        
         return returnedView
     }
@@ -57,7 +55,7 @@ class DisplaySubscriptionTableViewController: UITableViewController {
             passwordTextField.text = subscription.password
             billCycleTextField.text = subscription.billCycle
             billRateTextField.text = subscription.billRate
-            reminderTextField.text = subscription.reminder
+          //  reminderSegmentedControl.frame = subscription.reminder
             firstBillDateDatePicker.date = subscription.firstBillDate
             
         } else {
@@ -67,7 +65,7 @@ class DisplaySubscriptionTableViewController: UITableViewController {
             passwordTextField.text = ""
             billCycleTextField.text = ""
             billRateTextField.text = ""
-            reminderTextField.text = ""
+           // reminderTextField.text = ""
             firstBillDateDatePicker.date = NSDate()
             print("Test \(firstBillDateDatePicker.date)")
 
@@ -94,7 +92,7 @@ class DisplaySubscriptionTableViewController: UITableViewController {
                 newSubscription.password = passwordTextField.text ?? ""
                 newSubscription.billCycle = billCycleTextField.text ?? ""
                 newSubscription.billRate = billRateTextField.text ?? ""
-                newSubscription.reminder = reminderTextField.text ?? ""
+               // newSubscription.reminder = reminderTextField.text ?? ""
                 RealmHelper.updateSubscription(subscription, newSubscription: newSubscription)
 
             } else {
@@ -105,23 +103,14 @@ class DisplaySubscriptionTableViewController: UITableViewController {
                 subscription.password = passwordTextField.text ?? ""
                 subscription.billCycle = billCycleTextField.text ?? ""
                 subscription.billRate = billRateTextField.text ?? ""
-                subscription.reminder = reminderTextField.text ?? ""
+             //   subscription.reminder = reminderTextField.text ?? ""
                 RealmHelper.addSubscription(subscription)
             }
             
                 listSubscriptionTableViewController.subsciptions = RealmHelper.retriveSubscription()
             
-            
         }
     }
-    
-//        if let identifier = segue.identifier {
-//            
-//            if identifier == "displayBillRate" {
-//                
-//                print("Transitioning to the Display Subscription Table View Controller")
-//            }
-//        }
     
 
     @IBAction func unwindToDisplayBillRateViewController(segue: UIStoryboardSegue) {
@@ -129,8 +118,6 @@ class DisplaySubscriptionTableViewController: UITableViewController {
         
     }
 
-    
-    
 }
 
 

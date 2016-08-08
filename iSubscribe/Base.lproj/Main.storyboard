@@ -21,7 +21,6 @@
             <string>Exo2-Bold</string>
             <string>Exo2-Bold</string>
             <string>Exo2-Bold</string>
-            <string>Exo2-Bold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -236,28 +235,29 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFT-Cj-Ica">
                                                     <rect key="frame" x="18" y="11" width="81" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="81" id="rwl-Kv-jk0"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Exo2-Black" family="Exo 2" pointSize="17"/>
                                                     <color key="textColor" red="0.99607843139999996" green="0.21960784310000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="66q-Ub-HSb">
-                                                    <rect key="frame" x="316" y="7" width="90" height="30"/>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fVa-WA-Vg2">
+                                                    <rect key="frame" x="227" y="8" width="180" height="29"/>
+                                                    <color key="backgroundColor" red="0.3294117647" green="0.78039215689999997" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="90" id="DcZ-0r-vki"/>
+                                                        <constraint firstAttribute="width" constant="180" id="fWD-zn-Zxi"/>
                                                     </constraints>
-                                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
-                                                </textField>
+                                                    <segments>
+                                                        <segment title="1 Day"/>
+                                                        <segment title="3 Days"/>
+                                                        <segment title="Week"/>
+                                                    </segments>
+                                                    <color key="tintColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </segmentedControl>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="sFT-Cj-Ica" firstAttribute="leading" secondItem="e0g-85-ZzK" secondAttribute="leadingMargin" constant="10" id="0gl-EN-wB9"/>
-                                                <constraint firstItem="sFT-Cj-Ica" firstAttribute="centerY" secondItem="e0g-85-ZzK" secondAttribute="centerY" id="DQW-If-Rup"/>
-                                                <constraint firstItem="66q-Ub-HSb" firstAttribute="trailing" secondItem="e0g-85-ZzK" secondAttribute="trailingMargin" id="cs7-ZM-vPV"/>
-                                                <constraint firstItem="66q-Ub-HSb" firstAttribute="centerY" secondItem="sFT-Cj-Ica" secondAttribute="centerY" id="vka-SC-AUe"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="fVa-WA-Vg2" secondAttribute="trailing" constant="-1" id="19B-7t-7N9"/>
+                                                <constraint firstItem="fVa-WA-Vg2" firstAttribute="top" secondItem="e0g-85-ZzK" secondAttribute="topMargin" id="6eZ-az-tW3"/>
+                                                <constraint firstItem="sFT-Cj-Ica" firstAttribute="centerY" secondItem="fVa-WA-Vg2" secondAttribute="centerY" id="EdC-fv-Lnl"/>
+                                                <constraint firstItem="sFT-Cj-Ica" firstAttribute="leading" secondItem="e0g-85-ZzK" secondAttribute="leadingMargin" constant="10" id="ZTT-qE-lor"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.3294117647" green="0.78039215689999997" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -312,7 +312,7 @@
                         <outlet property="billRateTextField" destination="1T1-6n-jtG" id="Rq2-Dg-8Yr"/>
                         <outlet property="firstBillDateDatePicker" destination="G0Z-Jj-pR2" id="Uth-SM-bbF"/>
                         <outlet property="passwordTextField" destination="hFF-LX-PwP" id="hbp-Jf-1Ui"/>
-                        <outlet property="reminderTextField" destination="66q-Ub-HSb" id="G1b-zc-CfM"/>
+                        <outlet property="reminderSegmentedControl" destination="fVa-WA-Vg2" id="y8Y-Yb-o4T"/>
                         <outlet property="subscriptionNameTextField" destination="0PV-aj-5TN" id="Rsg-2m-sGq"/>
                         <outlet property="usernameTextField" destination="MZC-o4-ald" id="Ekl-10-h9F"/>
                     </connections>

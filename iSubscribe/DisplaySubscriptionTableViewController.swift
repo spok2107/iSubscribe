@@ -77,9 +77,10 @@ class DisplaySubscriptionTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
+        firstBillDateDatePicker.setValue(UIColor.whiteColor(), forKey: "textColor")
     }
+    
+  
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "Save" {

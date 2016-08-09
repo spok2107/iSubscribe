@@ -9,6 +9,8 @@
 import UIKit
 import RealmSwift
 
+var strDate = ""
+
 class DisplaySubscriptionTableViewController: UITableViewController {
     
     var subscription: Subscription?
@@ -27,12 +29,20 @@ class DisplaySubscriptionTableViewController: UITableViewController {
     
     @IBOutlet weak var firstBillDateDatePicker: UIDatePicker!
     
-//    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var selectedDate: UILabel!
     
-
+    
+    var dateFormatter = NSDateFormatter()
+    
+    @IBAction func datePickerAction(sender: AnyObject) {
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        var strDate = dateFormatter.stringFromDate(firstBillDateDatePicker.date)
+        self.selectedDate.text = strDate
+    }
+    
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let returnedView = UIView(frame: CGRectMake(0, 92, 414, 44)) //set these values as necessary
+        let returnedView = UIView(frame: CGRectMake(0, 92, 414, 44))
         returnedView.backgroundColor = UIColor(red: 112.0/255.0, green: 190.0/255.0, blue: 249.0/255.0, alpha: 1.0)
 
        
@@ -55,8 +65,9 @@ class DisplaySubscriptionTableViewController: UITableViewController {
             passwordTextField.text = subscription.password
             billCycleTextField.text = subscription.billCycle
             billRateTextField.text = subscription.billRate
-          //  reminderSegmentedControl.frame = subscription.reminder
             firstBillDateDatePicker.date = subscription.firstBillDate
+            selectedDate.text = subscription.firstBillDateString
+            print("sub = sub")
             
         } else {
             
@@ -67,16 +78,27 @@ class DisplaySubscriptionTableViewController: UITableViewController {
             billRateTextField.text = ""
            // reminderTextField.text = ""
             firstBillDateDatePicker.date = NSDate()
+            selectedDate.text = dateFormatter.stringFromDate(NSDate())
             print("Test \(firstBillDateDatePicker.date)")
+            print("sub != sub")
 
         }
     }
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         firstBillDateDatePicker.setValue(UIColor.whiteColor(), forKey: "textColor")
+        let billDate = subscription?.firstBillDate
+        
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        strDate = dateFormatter.stringFromDate(firstBillDateDatePicker.date)
+        //self.selectedDate.text = strDate
     }
+    
+ 
     
   
     
@@ -93,6 +115,8 @@ class DisplaySubscriptionTableViewController: UITableViewController {
                 newSubscription.billCycle = billCycleTextField.text ?? ""
                 newSubscription.billRate = billRateTextField.text ?? ""
                // newSubscription.reminder = reminderTextField.text ?? ""
+                newSubscription.firstBillDate = firstBillDateDatePicker.date ?? NSDate()
+                newSubscription.firstBillDateString = selectedDate.text ?? ""
                 RealmHelper.updateSubscription(subscription, newSubscription: newSubscription)
 
             } else {
@@ -104,6 +128,9 @@ class DisplaySubscriptionTableViewController: UITableViewController {
                 subscription.billCycle = billCycleTextField.text ?? ""
                 subscription.billRate = billRateTextField.text ?? ""
              //   subscription.reminder = reminderTextField.text ?? ""
+                subscription.firstBillDateString = selectedDate.text ?? ""
+                subscription.firstBillDate = firstBillDateDatePicker.date ?? NSDate()
+                
                 RealmHelper.addSubscription(subscription)
             }
             
@@ -112,9 +139,14 @@ class DisplaySubscriptionTableViewController: UITableViewController {
         }
     }
     
+    func setSubscriptionDate(){
+        if let subscription = subscription{
+            subscription.firstBillDate = firstBillDateDatePicker.date
+        }
+    }
+    
 
     @IBAction func unwindToDisplayBillRateViewController(segue: UIStoryboardSegue) {
-        
         
     }
 

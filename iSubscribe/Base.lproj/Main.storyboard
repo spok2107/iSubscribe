@@ -21,6 +21,7 @@
             <string>Exo2-Bold</string>
             <string>Exo2-Bold</string>
             <string>Exo2-Bold</string>
+            <string>Exo2-Bold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -40,6 +41,9 @@
                             <date key="date" timeIntervalSinceReferenceDate="491952179.86513799">
                                 <!--2016-08-03 21:22:59 +0000-->
                             </date>
+                            <connections>
+                                <action selector="datePickerAction:" destination="OfD-u0-BMw" eventType="valueChanged" id="Ey8-pz-eOX"/>
+                            </connections>
                         </datePicker>
                         <sections>
                             <tableViewSection id="qAE-UI-piR">
@@ -166,16 +170,16 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Cycle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14z-AO-cnS">
                                                     <rect key="frame" x="18" y="11" width="92" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="92" id="xdO-Ug-fsc"/>
+                                                        <constraint firstAttribute="width" constant="92" id="8rq-1y-1Th"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Exo2-Black" family="Exo 2" pointSize="17"/>
                                                     <color key="textColor" red="0.99607843139999996" green="0.21960784310000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cycle" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OYp-Cg-8Kf">
-                                                    <rect key="frame" x="316" y="7" width="90" height="30"/>
+                                                    <rect key="frame" x="272" y="7" width="90" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="90" id="iPy-yb-Vmw"/>
+                                                        <constraint firstAttribute="width" constant="90" id="2qg-lm-2Zq"/>
                                                     </constraints>
                                                     <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="14"/>
@@ -183,10 +187,10 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="14z-AO-cnS" firstAttribute="leading" secondItem="s6B-d6-z0l" secondAttribute="leadingMargin" constant="10" id="PaH-uC-haw"/>
-                                                <constraint firstItem="OYp-Cg-8Kf" firstAttribute="centerY" secondItem="s6B-d6-z0l" secondAttribute="centerY" id="ZRp-GE-8pt"/>
-                                                <constraint firstItem="OYp-Cg-8Kf" firstAttribute="centerY" secondItem="14z-AO-cnS" secondAttribute="centerY" id="kBC-gI-33F"/>
-                                                <constraint firstItem="OYp-Cg-8Kf" firstAttribute="trailing" secondItem="s6B-d6-z0l" secondAttribute="trailingMargin" id="qyo-WI-fy7"/>
+                                                <constraint firstItem="14z-AO-cnS" firstAttribute="centerY" secondItem="s6B-d6-z0l" secondAttribute="centerY" id="fra-iO-XKu"/>
+                                                <constraint firstItem="14z-AO-cnS" firstAttribute="centerY" secondItem="OYp-Cg-8Kf" secondAttribute="centerY" id="jb0-a2-dJf"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="OYp-Cg-8Kf" secondAttribute="trailing" constant="44" id="oVA-u9-pZC"/>
+                                                <constraint firstItem="14z-AO-cnS" firstAttribute="leading" secondItem="s6B-d6-z0l" secondAttribute="leadingMargin" constant="10" id="wDg-j6-gGt"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.3294117647" green="0.78039215689999997" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -201,16 +205,16 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hz7-3e-Gc8">
                                                     <rect key="frame" x="18" y="11" width="74" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="74" id="UMZ-ha-bO8"/>
+                                                        <constraint firstAttribute="width" constant="74" id="jmK-kc-L2n"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Exo2-Black" family="Exo 2" pointSize="17"/>
                                                     <color key="textColor" red="0.99607843139999996" green="0.21960784310000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rate" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1T1-6n-jtG">
-                                                    <rect key="frame" x="316" y="7" width="90" height="30"/>
+                                                    <rect key="frame" x="272" y="7" width="90" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="90" id="hzs-yg-1te"/>
+                                                        <constraint firstAttribute="width" constant="90" id="Q0W-39-521"/>
                                                     </constraints>
                                                     <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="14"/>
@@ -218,10 +222,10 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="1T1-6n-jtG" firstAttribute="trailing" secondItem="opG-WO-9lv" secondAttribute="trailingMargin" id="9rh-Y0-twJ"/>
-                                                <constraint firstItem="Hz7-3e-Gc8" firstAttribute="leading" secondItem="opG-WO-9lv" secondAttribute="leadingMargin" constant="10" id="C68-Fn-APw"/>
-                                                <constraint firstItem="1T1-6n-jtG" firstAttribute="centerY" secondItem="Hz7-3e-Gc8" secondAttribute="centerY" id="H7A-AI-BUy"/>
-                                                <constraint firstItem="Hz7-3e-Gc8" firstAttribute="centerY" secondItem="opG-WO-9lv" secondAttribute="centerY" id="N6q-Ef-krN"/>
+                                                <constraint firstItem="Hz7-3e-Gc8" firstAttribute="leading" secondItem="opG-WO-9lv" secondAttribute="leadingMargin" constant="10" id="0pv-VF-6Ae"/>
+                                                <constraint firstItem="Hz7-3e-Gc8" firstAttribute="centerY" secondItem="1T1-6n-jtG" secondAttribute="centerY" id="2mv-Ik-RnU"/>
+                                                <constraint firstItem="Hz7-3e-Gc8" firstAttribute="centerY" secondItem="opG-WO-9lv" secondAttribute="centerY" id="3dr-Td-v0G"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="1T1-6n-jtG" secondAttribute="trailing" constant="44" id="GD0-QU-vBM"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.3294117647" green="0.78039215689999997" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -270,18 +274,27 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Bill Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYE-Lf-acV">
-                                                    <rect key="frame" x="17" y="11" width="150" height="21"/>
+                                                    <rect key="frame" x="18" y="11" width="150" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="8Fx-SD-eP3"/>
+                                                        <constraint firstAttribute="width" constant="150" id="wHu-2O-HSm"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Exo2-Black" family="Exo 2" pointSize="17"/>
                                                     <color key="textColor" red="0.99607843139999996" green="0.21960784310000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFR-gY-TtX">
+                                                    <rect key="frame" x="200" y="11" width="205" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="17"/>
+                                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="iYE-Lf-acV" firstAttribute="leading" secondItem="Gsi-Uy-euc" secondAttribute="leadingMargin" constant="9" id="Li3-iY-2se"/>
-                                                <constraint firstItem="iYE-Lf-acV" firstAttribute="centerY" secondItem="Gsi-Uy-euc" secondAttribute="centerY" id="rD7-4T-rnL"/>
+                                                <constraint firstItem="iYE-Lf-acV" firstAttribute="centerY" secondItem="Gsi-Uy-euc" secondAttribute="centerY" id="5KT-yh-Ii6"/>
+                                                <constraint firstItem="iYE-Lf-acV" firstAttribute="top" secondItem="HFR-gY-TtX" secondAttribute="top" id="LV6-tl-30w"/>
+                                                <constraint firstItem="HFR-gY-TtX" firstAttribute="leading" secondItem="iYE-Lf-acV" secondAttribute="trailing" constant="32" id="cEe-hA-YEW"/>
+                                                <constraint firstItem="iYE-Lf-acV" firstAttribute="leading" secondItem="Gsi-Uy-euc" secondAttribute="leadingMargin" constant="10" id="uwx-Wb-a1h"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="HFR-gY-TtX" secondAttribute="trailing" constant="1" id="vDW-jU-8p1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.3294117647" green="0.78039215689999997" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -313,6 +326,7 @@
                         <outlet property="firstBillDateDatePicker" destination="G0Z-Jj-pR2" id="Uth-SM-bbF"/>
                         <outlet property="passwordTextField" destination="hFF-LX-PwP" id="hbp-Jf-1Ui"/>
                         <outlet property="reminderSegmentedControl" destination="fVa-WA-Vg2" id="y8Y-Yb-o4T"/>
+                        <outlet property="selectedDate" destination="HFR-gY-TtX" id="3UM-XF-pL5"/>
                         <outlet property="subscriptionNameTextField" destination="0PV-aj-5TN" id="Rsg-2m-sGq"/>
                         <outlet property="usernameTextField" destination="MZC-o4-ald" id="Ekl-10-h9F"/>
                     </connections>

@@ -35,6 +35,7 @@ class RealmHelper {
             subscriptionToBeUpdate.billRate = newSubscription.billRate
             subscriptionToBeUpdate.reminder = newSubscription.reminder
             subscriptionToBeUpdate.firstBillDate = newSubscription.firstBillDate
+            subscriptionToBeUpdate.firstBillDateString = newSubscription.firstBillDateString
             
         }
         

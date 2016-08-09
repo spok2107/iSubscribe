@@ -33,7 +33,6 @@
 		59276D221D4977F000657389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59276D201D4977F000657389 /* Main.storyboard */; };
 		59276D241D4977F000657389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59276D231D4977F000657389 /* Assets.xcassets */; };
 		59276D271D4977F000657389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59276D251D4977F000657389 /* LaunchScreen.storyboard */; };
-		595610121D58427100C1285B /* SectionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595610111D58427100C1285B /* SectionTableView.swift */; };
 		595610141D59832400C1285B /* DropDownConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595610131D59832400C1285B /* DropDownConstant.swift */; };
 		596E52D31D54026500BF06E2 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596E52D21D54026500BF06E2 /* RealmHelper.swift */; };
 		59935C771D4C05660055B0C5 /* ListSubscriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59935C761D4C05660055B0C5 /* ListSubscriptionTableViewCell.swift */; };
@@ -87,7 +86,6 @@
 		59276D231D4977F000657389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59276D261D4977F000657389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59276D281D4977F000657389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		595610111D58427100C1285B /* SectionTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionTableView.swift; sourceTree = "<group>"; };
 		595610131D59832400C1285B /* DropDownConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownConstant.swift; sourceTree = "<group>"; };
 		596E52D21D54026500BF06E2 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		59935C761D4C05660055B0C5 /* ListSubscriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSubscriptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -196,7 +194,6 @@
 			children = (
 				59935C7A1D4C14950055B0C5 /* ListSubscriptionTableViewController.swift */,
 				59935C7C1D4FC99F0055B0C5 /* DisplaySubscriptionTableViewController.swift */,
-				595610111D58427100C1285B /* SectionTableView.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -367,7 +364,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				595610141D59832400C1285B /* DropDownConstant.swift in Sources */,
-				595610121D58427100C1285B /* SectionTableView.swift in Sources */,
 				59935C7B1D4C14950055B0C5 /* ListSubscriptionTableViewController.swift in Sources */,
 				59935C771D4C05660055B0C5 /* ListSubscriptionTableViewCell.swift in Sources */,
 				59935C7D1D4FC99F0055B0C5 /* DisplaySubscriptionTableViewController.swift in Sources */,

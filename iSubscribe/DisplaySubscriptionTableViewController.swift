@@ -14,6 +14,8 @@ var strDate = ""
 
 class DisplaySubscriptionTableViewController: UITableViewController {
     
+    //Defining IBOutlets and local class variables
+    
     var subscription: Subscription?
     
     @IBOutlet weak var subscriptionNameTextField: UITextField!
@@ -32,12 +34,6 @@ class DisplaySubscriptionTableViewController: UITableViewController {
     
     @IBOutlet weak var selectedDate: UILabel!
     
-    @IBAction func billCycleDropDownMenu(sender: AnyObject) {
-        let dropDown = DropDown()
-        dropDown.anchorView = view
-        dropDown.dataSource = ["Car", "Motorcycle", "Truck"]
-    }
-    
     var dateFormatter = NSDateFormatter()
     
     @IBAction func datePickerAction(sender: AnyObject) {
@@ -50,12 +46,10 @@ class DisplaySubscriptionTableViewController: UITableViewController {
 //    dropDown.anchorView = view
 //    dropDown.dataSource = ["Car", "Motorcycle", "Truck"]
 
-    
+    //Changing color of table view section header
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let returnedView = UIView(frame: CGRectMake(0, 92, 414, 44))
         returnedView.backgroundColor = UIColor(red: 112.0/255.0, green: 190.0/255.0, blue: 249.0/255.0, alpha: 1.0)
-
-       
         return returnedView
     }
     
@@ -65,6 +59,7 @@ class DisplaySubscriptionTableViewController: UITableViewController {
 //        header.textLabel?.textColor = UIColor.redColor()
 //    }
     
+    //Setting up function for filling an instance of the subscription class ?? idk maybe
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
@@ -96,24 +91,22 @@ class DisplaySubscriptionTableViewController: UITableViewController {
         }
     }
     
-    
-    
+    //loads when the view controller is called
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Changing background color of date picker
         firstBillDateDatePicker.setValue(UIColor.whiteColor(), forKey: "textColor")
         // let billDate = subscription?.firstBillDate
         _ = subscription?.firstBillDate
         
+        //Formatting the NSDate of the date picker to a string
         var dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy"
         strDate = dateFormatter.stringFromDate(firstBillDateDatePicker.date)
         //self.selectedDate.text = strDate
     }
     
- 
-    
-  
-    
+    //Saving a new instance of the subscription class
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "Save" {
             let listSubscriptionTableViewController = segue.destinationViewController as! ListSubscriptionTableViewController
@@ -143,21 +136,18 @@ class DisplaySubscriptionTableViewController: UITableViewController {
                 subscription.firstBillDateString = selectedDate.text ?? ""
                 subscription.firstBillDate = firstBillDateDatePicker.date ?? NSDate()
                 
+                //Important saving subscription with Realm
                 RealmHelper.addSubscription(subscription)
             }
             
+                //When subscription exists, fetches subscription date ??
                 listSubscriptionTableViewController.subsciptions = RealmHelper.retriveSubscription()
             
         }
     }
     
-    func setSubscriptionDate(){
-        if let subscription = subscription{
-            subscription.firstBillDate = firstBillDateDatePicker.date
-        }
-    }
     
-
+    //defining an unwind segue
     @IBAction func unwindToDisplayBillRateViewController(segue: UIStoryboardSegue) {
         
     }

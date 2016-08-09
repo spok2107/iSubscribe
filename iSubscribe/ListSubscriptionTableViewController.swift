@@ -12,16 +12,19 @@ import RealmSwift
 
 class ListSubscriptionTableViewController: UITableViewController {
     
+    //Some realm stuff that idk what it does really ??
     var subsciptions: Results<Subscription>! {
         didSet {
             tableView.reloadData()
         }
     }
     
+    //Table view protocol function - defining the number of rows
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return subsciptions.count
     }
     
+    //Table view protocol function - defining the cells' contents & index path
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("listSubscriptionTableViewCell", forIndexPath: indexPath) as! ListSubscriptionTableViewCell
         
@@ -34,6 +37,7 @@ class ListSubscriptionTableViewController: UITableViewController {
         return cell
     }
     
+    //Deleting a subscription from realm
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
 
         if editingStyle == .Delete {
@@ -44,12 +48,13 @@ class ListSubscriptionTableViewController: UITableViewController {
         }
     }
 
+    //Loads existing subscriptions from realm when the view loads
     override func viewDidLoad() {
         super.viewDidLoad()
         subsciptions = RealmHelper.retriveSubscription()
     }
     
-    
+    //Passing information based on which cell is clicked on
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let identifier = segue.identifier {
             if identifier == "displaySubscription" {
@@ -70,9 +75,7 @@ class ListSubscriptionTableViewController: UITableViewController {
         }
     }
     
-    
-    
-    
+    //Defining unwind segue
     @IBAction func unwindToListNotesViewController(segue: UIStoryboardSegue) {
         
     }

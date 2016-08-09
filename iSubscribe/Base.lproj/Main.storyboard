@@ -185,11 +185,20 @@
                                                     <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                                 </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ll-bO-vjm">
+                                                    <rect key="frame" x="360" y="7" width="46" height="30"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="billCycleDropDownMenu:" destination="OfD-u0-BMw" eventType="touchUpInside" id="fO0-F3-lbe"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="14z-AO-cnS" firstAttribute="centerY" secondItem="s6B-d6-z0l" secondAttribute="centerY" id="fra-iO-XKu"/>
                                                 <constraint firstItem="14z-AO-cnS" firstAttribute="centerY" secondItem="OYp-Cg-8Kf" secondAttribute="centerY" id="jb0-a2-dJf"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="OYp-Cg-8Kf" secondAttribute="trailing" constant="44" id="oVA-u9-pZC"/>
+                                                <constraint firstItem="9ll-bO-vjm" firstAttribute="top" secondItem="OYp-Cg-8Kf" secondAttribute="top" id="ql9-LF-lNJ"/>
+                                                <constraint firstItem="9ll-bO-vjm" firstAttribute="trailing" secondItem="s6B-d6-z0l" secondAttribute="trailingMargin" id="w13-pK-MYw"/>
                                                 <constraint firstItem="14z-AO-cnS" firstAttribute="leading" secondItem="s6B-d6-z0l" secondAttribute="leadingMargin" constant="10" id="wDg-j6-gGt"/>
                                             </constraints>
                                         </tableViewCellContentView>

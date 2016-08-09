@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import DropDown
 
 var strDate = ""
 
@@ -31,6 +32,11 @@ class DisplaySubscriptionTableViewController: UITableViewController {
     
     @IBOutlet weak var selectedDate: UILabel!
     
+    @IBAction func billCycleDropDownMenu(sender: AnyObject) {
+        let dropDown = DropDown()
+        dropDown.anchorView = view
+        dropDown.dataSource = ["Car", "Motorcycle", "Truck"]
+    }
     
     var dateFormatter = NSDateFormatter()
     
@@ -40,6 +46,10 @@ class DisplaySubscriptionTableViewController: UITableViewController {
         self.selectedDate.text = strDate
     }
     
+//    let dropDown = DropDown()
+//    dropDown.anchorView = view
+//    dropDown.dataSource = ["Car", "Motorcycle", "Truck"]
+
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let returnedView = UIView(frame: CGRectMake(0, 92, 414, 44))
@@ -91,7 +101,8 @@ class DisplaySubscriptionTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         firstBillDateDatePicker.setValue(UIColor.whiteColor(), forKey: "textColor")
-        let billDate = subscription?.firstBillDate
+        // let billDate = subscription?.firstBillDate
+        _ = subscription?.firstBillDate
         
         var dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy"

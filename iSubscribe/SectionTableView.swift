@@ -16,5 +16,4 @@ class SectionTableView: UITableView {
         header.textLabel?.textColor = UIColor.redColor()
     }
 
-
 }

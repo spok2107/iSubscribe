@@ -66,7 +66,9 @@ class DisplaySubscriptionTableViewController: UITableViewController {
             billCycleTextField.text = subscription.billCycle
             billRateTextField.text = subscription.billRate
             firstBillDateDatePicker.date = subscription.firstBillDate
+            reminderSegmentedControl.selectedSegmentIndex = subscription.reminder
             selectedDate.text = subscription.firstBillDateString
+            reminderSegmentedControl.selectedSegmentIndex = subscription.reminder
             print("sub = sub")
             
         } else {
@@ -76,7 +78,6 @@ class DisplaySubscriptionTableViewController: UITableViewController {
             passwordTextField.text = ""
             billCycleTextField.text = ""
             billRateTextField.text = ""
-           // reminderTextField.text = ""
             firstBillDateDatePicker.date = NSDate()
             selectedDate.text = dateFormatter.stringFromDate(NSDate())
             print("Test \(firstBillDateDatePicker.date)")
@@ -114,7 +115,7 @@ class DisplaySubscriptionTableViewController: UITableViewController {
                 newSubscription.password = passwordTextField.text ?? ""
                 newSubscription.billCycle = billCycleTextField.text ?? ""
                 newSubscription.billRate = billRateTextField.text ?? ""
-               // newSubscription.reminder = reminderTextField.text ?? ""
+                newSubscription.reminder = reminderSegmentedControl.selectedSegmentIndex
                 newSubscription.firstBillDate = firstBillDateDatePicker.date ?? NSDate()
                 newSubscription.firstBillDateString = selectedDate.text ?? ""
                 RealmHelper.updateSubscription(subscription, newSubscription: newSubscription)
@@ -127,7 +128,7 @@ class DisplaySubscriptionTableViewController: UITableViewController {
                 subscription.password = passwordTextField.text ?? ""
                 subscription.billCycle = billCycleTextField.text ?? ""
                 subscription.billRate = billRateTextField.text ?? ""
-             //   subscription.reminder = reminderTextField.text ?? ""
+                subscription.reminder = reminderSegmentedControl.selectedSegmentIndex
                 subscription.firstBillDateString = selectedDate.text ?? ""
                 subscription.firstBillDate = firstBillDateDatePicker.date ?? NSDate()
                 

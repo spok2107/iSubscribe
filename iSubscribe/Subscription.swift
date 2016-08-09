@@ -16,7 +16,7 @@ class Subscription: Object {
     dynamic var subscriptionName: String = ""
     dynamic var billCycle: String = ""
     dynamic var billRate: String = ""
-    dynamic var reminder: String = ""
+    dynamic var reminder: Int = -1
     dynamic var firstBillDateString: String = ""
     dynamic var firstBillDate = NSDate()
     

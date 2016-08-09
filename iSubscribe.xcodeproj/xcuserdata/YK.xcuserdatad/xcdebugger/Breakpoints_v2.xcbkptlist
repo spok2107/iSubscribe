@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iSubscribe/DisplaySubscriptionTableViewController.swift"
-            timestampString = "492402154.061116"
+            timestampString = "492402961.432525"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "setSubscriptionDate()"
             landmarkType = "5">
          </BreakpointContent>
